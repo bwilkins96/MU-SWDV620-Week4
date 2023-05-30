@@ -1,0 +1,19 @@
+header, footer {
+    background-color: #004a4a;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+aside {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.title {
+    color: darkblue;
+}
+
+#travelList {
+    color: darkgreen;
+}
