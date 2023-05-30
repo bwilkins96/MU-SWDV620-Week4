@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <!-- SWDV 620: Web Applications -->
+    <!-- HTML page for week 4 assignment -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Week 4 Assignment</title>
+        <script src="week_4.js" type="text/javascript"></script>
+        <style>
+            body {
+                transition: 0.75s;
+                font-size: 20px;
+            }
+
+            input {
+                background-color: rgba(190, 190, 190, 0.8);
+                font-size: 25px;
+            }
+        </style>
+    </head>
+
+    <body onload="onLoad();">
+        <p id="welcomeMsg"></p>
+        
+        <label for="color">Enter a color: </label>
+        <input type="text" id="color" name="color" oninput="setColor();">
+        <button type="reset" id="reset" onclick="reset();">Reset</button>
+    </body>
+</html>
