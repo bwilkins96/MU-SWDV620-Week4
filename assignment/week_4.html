@@ -11,11 +11,14 @@
         <style>
             body {
                 transition: 0.75s;
-                font-size: 20px;
+            }
+            
+            label, p, table {
+                background-color: rgba(255, 255, 255, 0.4);
             }
 
             label, p {
-                background-color: rgba(255, 255, 255, 0.4);
+                font-size: 20px;
                 width: fit-content;
                 margin-right: 1px;
             }
@@ -24,14 +27,31 @@
                 background-color: rgba(190, 190, 190, 0.8);
                 font-size: 25px;
             }
+
+            table {
+                margin-top: 50px;
+                text-align: center;
+            }
         </style>
     </head>
 
     <body onload="promptLogin();">
         <p id="welcomeMsg"></p>
         
+        <!-- Color changing input box -->
         <label for="color">Enter a color:</label>
         <input type="text" id="color" name="color" oninput="setColor();">
         <button type="reset" id="reset" onclick="reset();">Reset</button>
+
+        <!-- List/table of JavaScript Objects -->
+        <table id="objectList" border="1" cellpadding="5">
+            <tr>
+                <th colspan="2">JavaScript Objects</th>
+            </tr>
+            <tr>
+                <th>Object</th>
+                <th>Example</th>
+            </tr>
+        </table>
     </body>
 </html>
