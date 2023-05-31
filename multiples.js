@@ -12,5 +12,5 @@ function multiplesArray(num, length = 10) {
     return multiples;
 }
 
-test = multiplesArray(4, 5);  // [ 4, 8, 12, 16, 20 ]
+let test = multiplesArray(4, 5);  // [ 4, 8, 12, 16, 20 ]
 console.log(test);
