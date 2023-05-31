@@ -14,6 +14,12 @@
                 font-size: 20px;
             }
 
+            label, p {
+                background-color: rgba(255, 255, 255, 0.4);
+                width: fit-content;
+                margin-right: 1px;
+            }
+
             input {
                 background-color: rgba(190, 190, 190, 0.8);
                 font-size: 25px;
@@ -21,10 +27,10 @@
         </style>
     </head>
 
-    <body onload="onLoad();">
+    <body onload="promptLogin();">
         <p id="welcomeMsg"></p>
         
-        <label for="color">Enter a color: </label>
+        <label for="color">Enter a color:</label>
         <input type="text" id="color" name="color" oninput="setColor();">
         <button type="reset" id="reset" onclick="reset();">Reset</button>
     </body>
